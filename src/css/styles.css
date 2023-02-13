@@ -15,29 +15,34 @@ body {
 header {
   background: #e94e1b;
   padding: 10px 50px;
-  position:fixed;
-  width:100%;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
-section{
-  padding:100px;
+section {
+  padding: 100px 0;
 }
 
 .image-container {
   display: flex;
-  justify-content: center;
-  align-content: center;
+  justify-items: start;
+  align-items: start;
+  min-width: 65px;
+  height: 100%;
 }
 
 .image-container img {
-  width: 100%;
-  height: 100%;
+  width: 65px;
+  height: 65px;
+  position: fixed;
+  left: 15px;
 }
 
 /* Acá tengo los estilos del navbar */
 .nav-bar-container {
   width: 100%;
-  height: auto;
+  height: 65px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -51,7 +56,7 @@ section{
 
 .nav-bar .marker {
   padding: 15px;
-  color:beige;
+  color: beige;
   text-decoration: none;
 }
 
@@ -65,60 +70,19 @@ section{
   border-radius: 100%;
 }
 
-/* Acá están los estilos del hero */
-
-#hero {
-  position: relative;
-}
-
-#hero #masaje {
-  display: inline-block;
-  width: 100%;
-
-}
-
-#hero .informacion-contenedor {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  display: flex;
-  width: 100%;
-  color: fff;
-  padding: 0 50px;
-}
-
-#hero .informacion-contenedor #libros-guruseva img {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-}
-
-#hero .informacion-contenedor .informacion {
-  margin-left: 20px;
-  font-weight: 700;
-}
-
-#hero .informacion-contenedor .informacion span {
-  display: inline-block;
-  color: b5b5b5;
-  margin-bottom: 70px;
-}
-
 /* Estilos del main */
 
 .centertext {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   width: 100%;
   font-size: 1rem;
 }
 
 
 main {
-  padding: 100px;
+  padding: 100px 0;
 }
 
 main .social-icons {
