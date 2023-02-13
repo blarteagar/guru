@@ -15,6 +15,12 @@ body {
 header {
   background: #e94e1b;
   padding: 10px 50px;
+  position:fixed;
+  width:100%;
+}
+
+section{
+  padding:100px;
 }
 
 .image-container {
@@ -31,11 +37,11 @@ header {
 /* Acá tengo los estilos del navbar */
 .nav-bar-container {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  position:fixed;
 }
 
 .nav-bar {
@@ -139,17 +145,6 @@ main .social-icons li {
   list-style: none;
 }
 
-/*Estilos para las secciones*/
-
-#nosotros {
-  height: 100vh;
-  width: auto;
-}
-
-#contacto {
-  height: 100vh;
-  width: auto;
-}
 
 
 /*Estilos del carousel*/
@@ -159,15 +154,15 @@ main .social-icons li {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100vw;
+  width: 100%;
   position: relative;
   margin: auto;
-  height: 75vh;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+  margin: auto;
 }
 
 /* Next & previous buttons */
@@ -250,4 +245,21 @@ main .social-icons li {
   to {
     opacity: 1
   }
+}
+
+/*Estilos para las secciones*/
+
+#nosotros {
+  height: 100vh;
+  background-color: #b7b7b7;
+}
+
+#eventos {
+  height: 100vh;
+  background-color: rgb(150, 250, 217);
+}
+
+#contacto {
+  height: 100vh;
+  background-color: rgb(255, 169, 158);
 }
